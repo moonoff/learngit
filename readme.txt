@@ -31,4 +31,5 @@ Git tracks changes of file.
 4.删除分支：
      git branch -d dev
 
-5.制造+冲突：
+5.解决冲突：
+
