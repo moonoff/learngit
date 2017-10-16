@@ -25,3 +25,10 @@ Git tracks changes of file.
                 $ git checkout dev
 2.查看分支：
     git branch
+3.合并分支：将dev分支合并到master：
+    git checkout master  （指定当前分支）
+    git merge dev        （合并dev到当前分支）
+4.删除分支：
+     git branch -d dev
+
+5.解决冲突：（制造冲突）
