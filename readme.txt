@@ -29,10 +29,22 @@ Git tracks changes of file.
     git checkout master  （指定当前分支）
     git merge dev        （合并dev到当前分支）
 4.删除分支：
-     git branch -d dev
+    git branch -d dev
 
 5.解决冲突：
     解决方法：合并之后提示冲突文件，打开文件修改成最终保存结果，使用add，commit命令交
     git log --graph --pretty=oneline --abbrev-commit（查看分支合并情况）
 
 6.分支管理策略：
+    git merge --no-ff -m "merge with no-ff" dev （保留分支合并路径）
+
+7.bug分支：
+     git stash（将当前的未完成工作暂存起来，去修改bug）
+     git stash list（暂存列表）
+     git stash apply （恢复暂存内容）git stash drop（删除暂存列表）
+     git stash pop （恢复暂存内容，并删除列表）
+     git stash apply stash@{0}（指定恢复的列表）
+
+8.新功能开发分支：
+    git branch -D dev (如果新功能不开发了，准备删除，使用-d无法删除没有合并的分支)
+    
