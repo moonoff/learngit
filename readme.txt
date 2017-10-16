@@ -47,4 +47,12 @@ Git tracks changes of file.
 
 8.新功能开发分支：
     git branch -D dev (如果新功能不开发了，准备删除，使用-d无法删除没有合并的分支)
-    
+
+9.推送分支：
+    git push origin <分支名>
+
+10.多人协作：
+    伙伴A克隆：git clone git@github.com:moonoff/learngit.git   (只有master分支)
+    伙伴B创建分支：git checkout -b dev origin/dev
+    伙伴C要提交分支dev，冲突发生，可以使用git pull
+
