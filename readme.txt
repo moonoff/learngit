@@ -32,4 +32,7 @@ Git tracks changes of file.
      git branch -d dev
 
 5.解决冲突：
+    解决方法：合并之后提示冲突文件，打开文件修改成最终保存结果，使用add，commit命令交
+    git log --graph --pretty=oneline --abbrev-commit（查看分支合并情况）
 
+6.分支管理策略：
